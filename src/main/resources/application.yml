@@ -1,1 +1,23 @@
+spring:
+  # 发件人邮件配置信息
+  mail:
+    host: smtp.163.com
+    username: test.tt@163.com
+    password: EYFIBMNKAHCALLCIA  # 邮箱授权密码
+    properties:
+      mail:
+        smtp:
+          auth: true
 
+# 备份配置信息
+backup:
+  # mysql安装路径，包含到bin目录
+  mysql_location: /usr/local/mysql/bin
+  url: 127.0.0.1:3306
+  username: root
+  password: toor1234
+
+  # 需要备份的数据库，多个使用逗号分隔
+  database: guoxing
+  # SQL保存文件夹名称
+  savaPath: temp
